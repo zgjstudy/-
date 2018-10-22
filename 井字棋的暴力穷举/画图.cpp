@@ -31,7 +31,10 @@ int main()
 	memset(d, 0, sizeof(d));
 	memset(branch, 0, sizeof(branch));
 
-	dfs(0);
+	d[3] = 1;
+	branch[0] = 3;
+
+	dfs(1);
 
 	system("pause");
 	return 0;
